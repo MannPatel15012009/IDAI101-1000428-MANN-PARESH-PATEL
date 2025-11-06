@@ -12,7 +12,7 @@
 ## Live Chatbot Link
 
 You can test the live, deployed chatbot here:  
-[Smart Campus Assistant (Dialogflow Demo)](https://console.dialogflow.com/api-client/demo/embedded/7c49fa8f-f5f9-4c7a-8b27-c2ead25d1f35)
+[Nutriwell Assistant (Dialogflow Demo)](https://console.dialogflow.com/api-client/demo/embedded/7c49fa8f-f5f9-4c7a-8b27-c2ead25d1f35)
 
 ---
 

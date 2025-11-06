@@ -1,4 +1,4 @@
-# AI-Based Smart Solutions: Smart Campus Assistant
+# AI-Based Smart Solutions: Smart Heath Assistant
 
 **Course:** Artificial Intelligence: Real-World Applications and Implications  
 **CRS:** Artificial Intelligence  

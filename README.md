@@ -2,124 +2,168 @@
 
 **Course:** Artificial Intelligence: Real-World Applications and Implications  
 **CRS:** Artificial Intelligence  
-**Student:** Jashith Hemendra Rathod  
+**Student:** Mann Paresh Patel  
 **Grade:** 11  
 **School:** Aspee Nutan Academy  
-**ID:** 1000422  
+**ID:** 1000428  
 
 ---
 
-## Live Chatbot Link
+# 🔴 Live Chatbot Access
 
-You can test the live, deployed chatbot here:  
-[Nutriwell Assistant (Dialogflow Demo)](https://console.dialogflow.com/api-client/demo/embedded/7c49fa8f-f5f9-4c7a-8b27-c2ead25d1f35)
+👉 Try the chatbot here:  
+https://bot.dialogflow.com/2ff21b48-c2b0-490d-a425-ef518be92a62
 
----
 
-## Project Overview
+# 🛍 ShoppyBuddy – AI Shopping Assistant
 
-This repository contains the **Smart Campus Assistant**, a chatbot built using **Google Dialogflow**.  
-It serves as a summative assessment project for the WACP course, *Artificial Intelligence: Real-World Applications and Implications*.
+## 📌 Project Overview
 
-The primary goal of this chatbot is to assist newcomers and regular campus users — including students, parents, staff, and visitors — by providing quick, accurate answers about:
+**ShoppyBuddy** is an intelligent shopping assistant chatbot developed using Dialogflow ES.  
+The chatbot helps users explore product categories, receive recommendations, and interact naturally using conversational AI.
 
-- Department locations  
-- Event venues  
-- Office hours  
-- Campus policies  
-- Transportation options  
-- Emergency contacts  
+It is designed as a structured, intent-driven assistant that categorizes products such as:
 
-This AI assistant acts as a reliable, interactive guide that enhances the overall campus experience.
+- 📱 Mobile Phones  
+- ⌚ Smart Watches  
+- 🎲 Board Games  
+- 🧸 Toys for Younger Children  
+- 🚗 Toys for Older Children  
 
----
-
-## Target Users
-
-The chatbot is designed to support the following groups:
-
-- New Students  
-- Staff Members  
-- Parents  
-- Visitors and Guests  
+The bot uses Natural Language Understanding (NLU) to identify user intent and respond accordingly.
 
 ---
 
-## Intents and Entities
+## 🧠 Technology Stack
 
-This chatbot was implemented with **15 intents** and **10 custom entities** to efficiently process user inputs and provide relevant responses.
-
----
-
-### Intents
-
-| Intent Name             | Description                                                                 | Example User Queries                                    |
-| :---------------------- | :-------------------------------------------------------------------------- | :------------------------------------------------------ |
-| Default Welcome Intent  | Greets the user and starts the conversation.                                | “Hi”, “Hello”, “Hey there”                              |
-| Default Fallback Intent | Handles unknown or unrecognized user inputs.                                | “??”, “I don’t understand”, “What?”                     |
-| any                     | When the user has no specific preference or restriction.                    | “Anything works”, “I’m fine with any”                   |
-| Avoid dairy and gluten. | Captures users who want to exclude dairy or gluten from their diet.         | “Avoid dairy”, “No gluten please”, “Lactose intolerant” |
-| Golden                  | Handles responses related to the *Golden* diet package tier.                | “Tell me about the golden plan”, “I want golden”        |
-| hey there               | Friendly greeting intent.                                                   | “Hey there!”, “Hi bot”                                  |
-| No allergies            | Captures users who have no allergies.                                       | “No allergies”, “I can eat anything”                    |
-| non veg                 | Captures users who eat non-vegetarian food.                                 | “I eat meat”, “Non-veg”, “Chicken is fine”              |
-| Peanuts                 | Allergy-specific intent for peanuts.                                        | “I’m allergic to peanuts”, “Avoid peanuts please”       |
-| Platinum                | Handles responses related to the *Platinum* diet package tier.              | “Platinum plan”, “Tell me about platinum”               |
-| purpose                 | Identifies the user’s goal (e.g., fitness, weight loss, muscle gain, etc.). | “I want to gain muscle”, “My purpose is fitness”        |
-| Silver                  | Handles responses related to the *Silver* diet package tier.                | “Silver plan”, “I want silver”                          |
-| Thank you               | Handles gratitude and polite closure.                                       | “Thanks”, “Thank you”, “Appreciate it”                  |
-| veg                     | Captures users who prefer vegetarian food.                                  | “I’m vegetarian”, “Veg only please”                     |
-| vegan                   | Captures users who prefer a vegan diet.                                     | “I’m vegan”, “No animal products”                       |
-| yes                     | Positive confirmation intent.                                               | “Yes”, “Sure”, “Okay”                                   |
+- Dialogflow ES (Natural Language Processing)
+- Intent-based conversation modeling
+- Entity recognition and parameter extraction
+- Structured conversational flows
 
 ---
 
-### Entities
+## 🎯 Core Features
 
-| Entity Name   | Description                                                   | Examples                                                       |
-| :------------ | :------------------------------------------------------------ | :------------------------------------------------------------- |
-| @diet_type    | Captures the user’s dietary preference.                       | “Veg”, “Non-veg”, “Vegan”, “Any”                               |
-| @allergy_type | Captures specific food allergies or intolerances.             | “Peanuts”, “Dairy”, “Gluten”, “Soy”                            |
-| @package_tier | Captures the selected diet plan tier or subscription level.   | “Silver”, “Golden”, “Platinum”                                 |
-| @restriction  | Captures specific food restrictions or avoidance preferences. | “Avoid dairy”, “No gluten”, “No sugar”                         |
-| @confirmation | Captures user confirmation or consent.                        | “Yes”, “Sure”, “Okay”, “Go ahead”                              |
-| @greeting     | Captures user greetings.                                      | “Hello”, “Hey there”, “Hi”                                     |
-| @purpose      | Captures the user’s fitness or health goal.                   | “Weight loss”, “Muscle gain”, “Stay fit”                       |
-| @gratitude    | Captures expressions of thanks or politeness.                 | “Thanks”, “Thank you”, “Appreciate it”                         |
-| @no_allergy   | Captures when the user indicates they have no allergies.      | “No allergies”, “I can eat everything”, “No food restrictions” |
+- Smart product category detection
+- Age-based toy recommendation system
+- Device-specific product suggestions
+- Graceful fallback handling
+- User-friendly conversational tone
+- Modular and scalable intent architecture
 
 ---
 
-## Integration Details
+## 📂 Intents Implemented
 
-- **Platform:** Built and hosted on *Google Dialogflow Essentials*.  
-- **Slot-Filling:** Used in certain intents (e.g., `find_professor_office`) to gather all required parameters before responding.  
-- **Rich Responses:** Implemented to improve engagement and user experience.  
-
-### Rich Response Types
-- **Suggestion Chips:** Offer navigation or quick-reply options such as “View Map” or “Get Directions.”  
-- **Media Responses:** Display relevant images (like maps, menus, or banners) to enhance clarity and visual appeal.  
-
----
-
-## Deployment Instructions
-
-The chatbot is already live and accessible through the link shared above.  
-To explore or modify the agent:
-
-1. Open **Google Dialogflow Console**.  
-2. Import the agent using the `.zip` file or recreate intents/entities manually.  
-3. Test responses in the integrated simulator.  
-4. Optionally, embed the chatbot into a website using Dialogflow’s HTML iframe code.  
+| Intent Name | Description |
+|------------|-------------|
+| Welcome Intent | Greets and introduces the chatbot |
+| Default Fallback Intent | Handles unknown or unsupported queries |
+| Board Games | Provides board game recommendations |
+| Mobile Phones | Suggests available mobile phones |
+| Smart Watches | Suggests smartwatch options |
+| Toys for Older Children | Recommends toys for older kids |
+| Toys for Younger Children | Recommends toys for younger kids |
+| ThankYou | Responds politely to gratitude |
 
 ---
 
-## Conclusion
+## 🧩 Entities Used
 
-The **Smart Campus Assistant** demonstrates how conversational AI can make everyday campus interactions faster, friendlier, and more efficient.  
-By blending **AI-based intent recognition** with **custom entities**, the chatbot personalizes responses and enhances the overall user experience.
+| Entity | Purpose |
+|--------|---------|
+| @MobilePhones | Detects mobile phone brands or types |
+| @Smartwatch | Detects smartwatch brands or types |
+| @OlderChildren | Identifies older age groups |
+| @YoungerChildren | Identifies younger age groups |
+
+These entities help the chatbot extract meaningful parameters from user queries to generate accurate responses.
 
 ---
 
-*Created by Jashith Hemendra Rathod — Aspee Nutan Academy (Grade 11)*  
+## 🏗 System Architecture
+
+User Input  
+↓  
+Dialogflow NLU Engine  
+↓  
+Intent Matching  
+↓  
+Entity Recognition  
+↓  
+Response Mapping  
+↓  
+User Output  
+
+The chatbot follows a clean intent-to-response mapping structure, ensuring fast and reliable conversations.
+
+---
+
+## 🧪 How It Works
+
+1. User sends a message.
+2. Dialogflow processes the natural language.
+3. The best matching intent is selected.
+4. Entities are extracted (if applicable).
+5. A predefined response is triggered.
+6. User receives relevant shopping suggestions.
+
+---
+
+## 🚀 Deployment
+
+The chatbot is deployed using Dialogflow’s web demo interface.
+
+To deploy your own version:
+1. Export the agent from Dialogflow.
+2. Import into a new Dialogflow project.
+3. Enable Web Demo integration.
+4. Share the generated chatbot link.
+
+---
+
+## 📈 Future Enhancements
+
+- Payment gateway integration
+- Order tracking functionality
+- Multi-language support
+- Webhook for real-time product data
+- Database integration
+- Admin analytics dashboard
+
+---
+
+## 🔐 Security & Best Practices
+
+- No sensitive credentials stored in repository
+- Dialogflow access managed via secure console
+- Structured intent design to reduce fallback rate
+
+---
+
+## 📚 Learning Outcome
+
+This project demonstrates:
+
+- Conversational AI design principles
+- Intent and entity modeling
+- NLP-based classification
+- Structured chatbot architecture
+- Practical implementation of Dialogflow ES
+
+---
+
+## 👨‍💻 Project Information
+
+Project Name: ShoppyBuddy  
+Platform: Dialogflow ES  
+Version: 1.0  
+Type: AI Shopping Assistant Chatbot  
+
+---
+
+⭐ If you found this project useful, consider starring the repository.
+
+*Created by Mann Paresh Patel— Aspee Nutan Academy (Grade 11)*  
 *Course: Artificial Intelligence — Real-World Applications and Implications*
